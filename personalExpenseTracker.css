@@ -1,0 +1,107 @@
+:root {
+    --food: orange;
+    --transport: #2196F3;
+    --entertainment: #9c27b0;
+    --education: #4CAF50;
+    --other: #757575;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+h1 { color: #1a1a1a; text-align: center; margin-bottom: 30px; }
+
+/* Summary Card */
+.summary-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.total-display p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 5px 0 0 0;
+}
+
+/* Form Styling */
+#expense-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input, select, button {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button:hover { background: #34495e; }
+
+/* Category Badges */
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.bg-Food { background-color: var(--food); }
+.bg-Transport { background-color: var(--transport); }
+.bg-Entertainment { background-color: var(--entertainment); }
+.bg-Education { background-color: var(--education); }
+.bg-Other { background-color: var(--other); }
+
+/* Table Styling */
+.table-container { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th { background: #f8f9fa; color: #666; text-align: left; padding: 15px; }
+td { padding: 15px; border-bottom: 1px solid #eee; }
+
+.delete-btn {
+    background: #ff4757;
+    padding: 6px 12px;
+}
+
+/* Budget Alert */
+#budget-alert {
+    background: #ffe0e0;
+    color: #d63031;
+    border-left: 5px solid #d63031;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.hidden { display: none; }
